@@ -1,0 +1,168 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #212121;
+    color: #dfdfdf;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.intro {
+    /* max-height: 0;
+    overflow: hidden; */
+    transition: all 250ms;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-top: 0.5em;
+}
+
+input {
+    display: block;
+    width: 100%;
+    max-width: 300px;
+    margin: 2em auto;
+    padding: 1em;
+    border-radius: 5px;
+}
+
+.pfcolor {
+    padding: 0;
+    height: 2em;
+}
+
+.play-button, .play-again-button {
+    margin-top: 1.5em;
+    font-size: 1.2rem;
+    padding: 0.5em 1em;
+    /* margin: 1em; */
+    border-radius: 5px;
+    font-weight: 600;
+}
+
+.play-button:hover, .play-again-button:hover {
+    background: white;
+}
+
+.main-game {
+    max-height: 0;
+    overflow: hidden;
+    transition: all 2s;
+    scrollbar-width: 0;
+}
+
+.score {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2em;
+    margin-top: 1em;
+}
+
+.score h2 {
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    margin-bottom: 0.3em;
+}
+
+.score p {
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.player-score, .computer-score {
+    background: white;
+    color: #212121;
+    padding: 0.5em 0;
+    border-radius: 5px;
+}
+
+.winner {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-top: 1em;
+}
+
+.hands {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+    align-items: center;
+    text-align: center;
+}
+
+.player-hand, .computer-hand {
+    margin: 1em auto;
+    /* animation: moveMe 4s linear; */
+}
+
+@keyframes moveMe {
+    0% {
+        transform: translateY(-25px);
+    }
+    25% {
+        transform: translateY(25px);
+    }
+    50% {
+        transform: translateY(-25px);
+    }
+    75% {
+        transform: translateY(25px);
+    }
+    100% {
+        transform: translateY(-25px);
+    }
+}
+
+.options {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1em;
+}
+
+.options button {
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.options button img {
+    margin: auto;
+}
+
+.game-end {
+    max-height: 0;
+    overflow: hidden;
+    transition: all 2s;
+    scrollbar-width: 0;
+}
+
+@media  (min-width: 1000px) {
+    .options {
+        gap: 6em;
+        justify-content: space-around;
+    }
+    .options button img {
+        max-width: 180px;
+    }
+}

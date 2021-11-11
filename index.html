@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <title>Rock paper and scissors</title>
+</head>
+
+<body>
+  <section class="game">
+
+    <div class="intro container">
+      <h1>Rock Paper and Scissors</h1>
+
+      <input class="form-control pname" type="text" id="pname" placeholder="Enter Your Name" required>
+      <input class="form-control page" type="number" id="page" placeholder="Enter Your Age" max="150" min="1" required>
+      <input class="form-control pfcolor" type="color" id="pfcolor" placeholder="Enter your favorite Color" required>
+      <button class="play-button">Let's Play</button>
+    </div>
+
+    <div class="main-game">
+      <div class="score fadeOut container">
+        <div class="player-score">
+          <h2>Player</h2>
+          <p class="player-score-number">0</p>
+        </div>
+        <div class="computer-score">
+          <h2>Computer</h2>
+          <p class="computer-score-number">0</p>
+        </div>
+      </div>
+
+      <div class="match fadeOut container">
+        <h2 class="winner">Choose an option</h2>
+        <div class="hands ">
+          <img class="player-hand" src="./assets/rock-rot.png" alt="" />
+          <img class="computer-hand" src="./assets/rock.png" alt="" />
+        </div>
+        <div class="options ">
+          <button class="rock"><img src="./assets/rock.png" alt="rock" />rock</button>
+          <button class="paper"><img src="./assets/paper.png" alt="paper" />paper</button>
+          <button class="scissors"><img src="./assets/scissors.png" alt="scissors" />scissors</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="game-end container">
+      <h1 class="game-end-sentance">You / Computer Won!</h1>
+      <button class="play-again-button">Let's Play Again</button>
+    </div>
+
+  </section>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
